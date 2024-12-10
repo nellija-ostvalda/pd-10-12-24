@@ -1,0 +1,19 @@
+def veikala_programma():
+    print("Lūdzu, ievadiet preces cenas un daudzumus. Lai beigtu ievadi, ievadiet '0'.")
+  gala_summa = 0
+while True:
+try:
+  cena = input("Ievadiet cenu: ")
+if cena == "0":
+break
+  cena = float(cena)
+  daudzums = int(input("Ievadiet daudzumu: "))
+  preces_summa = cena * daudzums
+  gala_summa += preces_summa
+    print(f"Preces kopējā summa: {preces_summa:.2f}")
+except ValueError:
+    print("Nepareiza ievade. Lūdzu, mēģiniet vēlreiz.")
+    print(f"Gala kopsumma par visām precēm: {gala_summa:.2f}")
+  # Izsauc funkciju
+    veikala_programma()
+
